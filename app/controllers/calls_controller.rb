@@ -3,11 +3,6 @@ class CallsController < ApplicationController
 
   # GET /calls
   def index
-    require 'securerandom'
-    stamp = Time.zone.now.to_formatted_s(:db)
-    content = SecureRandom.hex
-    Call.create(num: '0934123424', stamp: stamp , content: content, audio: 'abc.wav')
-
     @calls = Call.all
 
     render json: @calls
@@ -15,6 +10,11 @@ class CallsController < ApplicationController
 
   # GET /calls/1
   def show
+    require 'securerandom'
+    stamp = Time.zone.now.to_formatted_s(:db)
+    content = SecureRandom.hex
+    Call.create(num: '0934123424', stamp: stamp , content: content, audio: 'abc.wav')
+
     render json: @call
   end
 
