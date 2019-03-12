@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  num: MyString
+  stamp: MyString
+  content: MyString
+  audio: MyString
+
+two:
+  num: MyString
+  stamp: MyString
+  content: MyString
+  audio: MyString
