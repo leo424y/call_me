@@ -1,0 +1,2 @@
+class Uxer < ApplicationRecord
+end
